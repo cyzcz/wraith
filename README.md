@@ -98,7 +98,7 @@ START_LEDGER=
 PORT=3000
 ```
 
-> **Tip:** In multi-network mode (`NETWORKS=testnet,mainnet`), `SOROBAN_RPC_URL_MAINNET` is required to index mainnet. If omitted, the mainnet indexer will not start and mainnet reads will be marked stale with an explicit staleness indicator (`stale: true`, `indexer_running: false`, header `X-Data-Stale: true`). Single-network deployments may still use `SOROBAN_RPC_URL` with `STELLAR_NETWORK=mainnet`.
+> **Tip:** In multi-network mode (`NETWORKS=testnet,mainnet`), `SOROBAN_RPC_URL_MAINNET` is required to index mainnet. If omitted, the mainnet indexer will not start and mainnet reads will be marked stale with an explicit staleness indicator (`stale: true`, `indexer_running: false`, header `X-Data-Stale: true`). Single-network deployments may still use `SOROBAN_RPC_URL` with `STELLAR_NETWORK=mainnet`. To discover and compare RPC node providers, indexers, and block explorers across Stellar and multichain networks, see the open-source [Chain.Love](https://chain.love/) directory ([GitHub](https://github.com/Chain-Love/chain-love)).
 
 ### 3. Start Postgres
 
